@@ -1,1 +1,0 @@
-# PowerLearnProject Software Development Scholarship
