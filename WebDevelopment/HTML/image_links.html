@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navigation {
+            display: flex;
+            background-color: #333;
+        }
+        .navigation a {
+            padding: 14px 20px;
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+        .navigation a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="navigation">
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#menu">Menu</a>
+    </div>
+
+    <section id="home">
+        <h1>Welcome to the Home Page</h1>
+        <p>Images related to different topics.</p>
+        <a href="#home">
+            <img src="./img/tech.jpg" alt="Technology Image">
+        </a>
+    </section>
+
+    <section id="gallery">
+        <h2>Nature Gallery</h2>
+        <div class="gallery">
+            <a href="#gallery">
+                <img src="./img/nature.jpg" alt="Nature Image 1">
+            </a>
+            <a href="#gallery">
+                <img src="./img/bird.jpg" alt="Nature Image 2">
+            </a>
+            <a href="#gallery">
+                <img src="./img/water.jpg" alt="Nature Image 3">
+            </a>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Menu Foods</h2>
+        <ul>
+            <li><a href="https://i.pinimg.com/564x/b1/4e/96/b14e967be4d2d4d121ec19d6de13ea7c.jpg" target="_blank">Pizza</a></li>
+            <li><a href="https://i.pinimg.com/236x/43/7c/44/437c447768d443d33d9ee3743e87dd08.jpg" target="_blank">Burger</a></li>
+            <li><a href="https://i.pinimg.com/236x/fd/29/c3/fd29c3720252412ab6dfebb0348e4990.jpg" target="_blank">Fruit Blend</a></li>
+        </ul>
+    </section>
+
+</body>
+</html>
